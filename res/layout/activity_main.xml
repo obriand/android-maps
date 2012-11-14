@@ -3,12 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
+    <!-- TextView
+        android:id="@+id/main_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+        tools:context=".MainActivity" /-->
+
+    <com.google.android.maps.MapView
+        android:id="@+id/main_mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0Y58BgKIEMB5b7-a3cgCNlwyKDmoEuGbZqZT6Hw"
+        android:clickable="true"/>
+        <!-- android:layout_below="@id/main_tv" /-->
 
 </RelativeLayout>
